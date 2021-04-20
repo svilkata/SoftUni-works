@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bee52005-a3b6-425e-972b-44ea273b0f11" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="184" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qtxg5GgRYccJex5badYg1wOi3f" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="p02_ExtendedDatabase" />
+      <recent name="p06_TirePressureMonitoringSystem" />
+      <recent name="p05_CustomLinkedList" />
+      <recent name="p04_BubbleSortTest" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.DatabaseTest">
+    <configuration name="DatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTesting_Exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p02_ExtendedDatabase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="p02_ExtendedDatabase" />
+      <option name="MAIN_CLASS_NAME" value="p02_ExtendedDatabase.DatabaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseTest.findByUsernameWhenNoUserIsPresent_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTesting_Exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p02_ExtendedDatabase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="p02_ExtendedDatabase" />
+      <option name="MAIN_CLASS_NAME" value="p02_ExtendedDatabase.DatabaseTest" />
+      <option name="METHOD_NAME" value="findByUsernameWhenNoUserIsPresent_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseTest.findByUsernameWhenUserIsPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTesting_Exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p02_ExtendedDatabase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="p02_ExtendedDatabase" />
+      <option name="MAIN_CLASS_NAME" value="p02_ExtendedDatabase.DatabaseTest" />
+      <option name="METHOD_NAME" value="findByUsernameWhenUserIsPresent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseTest.findByUsernameWhenUsernameIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTesting_Exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p02_ExtendedDatabase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="p02_ExtendedDatabase" />
+      <option name="MAIN_CLASS_NAME" value="p02_ExtendedDatabase.DatabaseTest" />
+      <option name="METHOD_NAME" value="findByUsernameWhenUsernameIsNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseTest.findByUsernameWhenUsernameIsNull_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTesting_Exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p02_ExtendedDatabase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="p02_ExtendedDatabase" />
+      <option name="MAIN_CLASS_NAME" value="p02_ExtendedDatabase.DatabaseTest" />
+      <option name="METHOD_NAME" value="findByUsernameWhenUsernameIsNull_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DatabaseTest" />
+        <item itemvalue="JUnit.DatabaseTest.findByUsernameWhenUserIsPresent" />
+        <item itemvalue="JUnit.DatabaseTest.findByUsernameWhenNoUserIsPresent_ShouldThrowException" />
+        <item itemvalue="JUnit.DatabaseTest.findByUsernameWhenUsernameIsNull_ShouldThrowException" />
+        <item itemvalue="JUnit.DatabaseTest.findByUsernameWhenUsernameIsNull" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bee52005-a3b6-425e-972b-44ea273b0f11" name="Default Changelist" comment="" />
+      <created>1617912795882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617912795882</updated>
+      <workItem from="1617912797389" duration="25982000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/11. Java-OOP-Unit-Testing-Exercises-Resources/UnitTesting_Exercises/src/test/java/p1_Database_tests/DatabaseTest.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/11. Java-OOP-Unit-Testing-Exercises-Resources/UnitTesting_Exercises/src/test/java/p02_ExtendedDatabase/DatabaseTest.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/11. Java-OOP-Unit-Testing-Exercises-Resources/UnitTesting_Exercises/src/main/java/p02_ExtendedDatabase/Database.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="this.index" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/18___Unit_Testing___EXC$DatabaseTest.ic" NAME="DatabaseTest Coverage Results" MODIFIED="1618145515550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>p02_ExtendedDatabase.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/18___Unit_Testing___EXC$AlarmTest.ic" NAME="AlarmTest Coverage Results" MODIFIED="1618069148674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>p06_TirePressureMonitoringSystem.*</FILTER>
+    </SUITE>
+  </component>
+</project>
