@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1082c6cb-7553-4d65-b48f-f0f9ac09902a" name="Default Changelist" comment="" />
+    <list default="true" id="1082c6cb-7553-4d65-b48f-f0f9ac09902a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09 - Streams, files and directories - LAB/META-INF/09 - Streams, files and directories - LAB.kotlin_module" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +18,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1lpDCR9FT22V8jWHvJbZPdXDxBz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WriteEveryThirdLine">
+  <component name="RunManager" selected="Application.PrintFiles_Directories">
     <configuration name="ListFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ListFiles" />
       <module name="09 - Streams, files and directories - LAB" />
@@ -53,15 +61,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Serialization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Serialization" />
+    <configuration name="PrintFiles_Directories" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrintFiles_Directories" />
       <module name="09 - Streams, files and directories - LAB" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests" />
+    <configuration name="Serialization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Serialization" />
       <module name="09 - Streams, files and directories - LAB" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,11 +84,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrintFiles_Directories" />
         <item itemvalue="Application.WriteEveryThirdLine" />
         <item itemvalue="Application.Serialization" />
         <item itemvalue="Application.NestedFolders" />
         <item itemvalue="Application.ListFiles" />
-        <item itemvalue="Application.Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -97,11 +105,27 @@
       <workItem from="1608285012954" duration="11465000" />
       <workItem from="1608301704272" duration="3616000" />
       <workItem from="1608401440603" duration="8897000" />
+      <workItem from="1621803388335" duration="31000" />
+      <workItem from="1621803444630" duration="6000" />
+      <workItem from="1621803554362" duration="2023000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -110,6 +134,11 @@
           <url>file://$PROJECT_DIR$/src/WriteEveryThirdLine.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PrintFiles_Directories.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
