@@ -1,4 +1,5 @@
 import java.io.File;
+import java.util.Arrays;
 
 public class PrintFiles_Directories {
     public static void main(String[] args) {
@@ -8,25 +9,19 @@ public class PrintFiles_Directories {
     }
 
     private static void printAllFilesInAllFolders(File folder) {
-        File[] listOfFiles = folder.listFiles();
+        File[] listOfCurrentDirectories = folder.listFiles(file -> file.isDirectory());
+        File[] listOfCurrentFilesToPrint = folder.listFiles(file -> !file.isDirectory());
 
-        if (listOfFiles.length == 0) {
-            return;
+        for (File currentFileToPrint : listOfCurrentFilesToPrint) {
+            System.out.println(currentFileToPrint.getName());
         }
-        boolean isDirectoryPresent = false;
 
-        for (File listOfFile : listOfFiles) {
-            if (!listOfFile.isDirectory()) {
-                System.out.println(listOfFile.getName());
-            } else if (listOfFile.isDirectory()){
-                isDirectoryPresent = true;
-                printAllFilesInAllFolders(listOfFile);
+        if (listOfCurrentDirectories.length != 0) {
+            for (File currentDIrectory : listOfCurrentDirectories) {
+                printAllFilesInAllFolders(currentDIrectory);
             }
-        }
-
-        if (!isDirectoryPresent) {
+        } else {
             return;
         }
-
     }
 }
