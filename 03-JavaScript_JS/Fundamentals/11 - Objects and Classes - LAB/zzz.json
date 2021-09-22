@@ -1,0 +1,20 @@
+{
+    {
+        "name": "Ivan",
+        "age": 25,
+        "height": 190
+    }
+    
+
+    "name": "Ivan",
+    "age": 25,
+    "grades": {
+        "Math": [
+            2.50,
+            3.50
+        ],
+        "Chemistry": [
+            4.50
+        ]
+    }
+}
