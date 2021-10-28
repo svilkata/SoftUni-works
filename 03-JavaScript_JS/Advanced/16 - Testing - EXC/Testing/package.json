@@ -1,0 +1,15 @@
+{
+  "name": "Testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "2Module_EvenOdd.test.js",
+  "scripts": {
+    "test": "mocha 2Module_EvenOdd.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4"
+  }
+}

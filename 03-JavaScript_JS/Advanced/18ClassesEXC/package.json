@@ -1,0 +1,15 @@
+{
+  "name": "18ClassesEXC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "PaymentPackage.js",
+  "scripts": {
+    "test": "mocha PaymentPackage.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4"
+  }
+}
