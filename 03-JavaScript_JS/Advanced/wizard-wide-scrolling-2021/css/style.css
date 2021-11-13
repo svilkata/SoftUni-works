@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: 'consolas';
+}
+
+.game-view {
+    background-color: skyblue;
+    width: 100vw;
+    height: 100vh;
+}
+
+.start-screen {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;;
+    background-color: lightgreen;
+    font-weight: bold;
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.play-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.score-screen {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.wizard {
+    position: absolute;
+    background-image: url('/images/wizard.png');
+    background-size: cover;
+    width: 82px;
+    height: 100px;
+}
+
+.bug {
+    position: absolute;
+    background-image: url('/images/bug.png');
+    background-size: cover;
+}
+
+.fireball {
+    position: absolute;
+    background-image: url('/images/fire-ball.png');
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}
