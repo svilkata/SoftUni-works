@@ -1,0 +1,17 @@
+[
+    {
+        "title": "First article",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum a alias dolore error sit consequatur, architecto ipsum perferendis dolores expedita repellat placeat. Animi modi ex molestias. Accusantium obcaecati, laboriosam illo eum officia sint maiores repellendus. Doloribus ex quisquam, earum mollitia vitae, ullam adipisci voluptates facilis nesciunt at similique molestias eum. Voluptatum molestiae debitis aperiam aliquam saepe laboriosam veniam, sed omnis amet! Inventore atque nisi aperiam tenetur quidem quia eveniet id voluptatibus velit sed eum laudantium quisquam natus, magnam aliquam error quo nemo reiciendis tempore, assumenda deleniti? Vel exercitationem expedita commodi officia corporis porro asperiores, magni vero amet. Optio, voluptatibus!",
+        "author": "John Smith"
+    },
+    {
+        "title": "Second article",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum a alias dolore error sit consequatur, architecto ipsum perferendis dolores expedita repellat placeat. Animi modi ex molestias. Accusantium obcaecati, laboriosam illo eum officia sint maiores repellendus. Doloribus ex quisquam, earum mollitia vitae, ullam adipisci voluptates facilis nesciunt at similique molestias eum. Voluptatum molestiae debitis aperiam aliquam saepe laboriosam veniam, sed omnis amet! Inventore atque nisi aperiam tenetur quidem quia eveniet id voluptatibus velit sed eum laudantium quisquam natus, magnam aliquam error quo nemo reiciendis tempore, assumenda deleniti? Vel exercitationem expedita commodi officia corporis porro asperiores, magni vero amet. Optio, voluptatibus!",
+        "author": "Peter Johnson"
+    },
+    {
+        "title": "Third article",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum a alias dolore error sit consequatur, architecto ipsum perferendis dolores expedita repellat placeat. Animi modi ex molestias. Accusantium obcaecati, laboriosam illo eum officia sint maiores repellendus. Doloribus ex quisquam, earum mollitia vitae, ullam adipisci voluptates facilis nesciunt at similique molestias eum. Voluptatum molestiae debitis aperiam aliquam saepe laboriosam veniam, sed omnis amet! Inventore atque nisi aperiam tenetur quidem quia eveniet id voluptatibus velit sed eum laudantium quisquam natus, magnam aliquam error quo nemo reiciendis tempore, assumenda deleniti? Vel exercitationem expedita commodi officia corporis porro asperiores, magni vero amet. Optio, voluptatibus!",
+        "author": "Marie Curie"
+    }
+]

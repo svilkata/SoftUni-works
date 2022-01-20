@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="http://localhost:3030/jsonstore/phonebook">
+        <label>Person: <input type="text" name="person" /> </label>
+        <label>Phone: <input type="text" name="phone" /> </label>
+
+        <input type="submit" value="Create Record" />
+    </form>
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', onSubmit);
+        const personInput = document.querySelector('[name="person"]');
+        const phoneInput = document.querySelector('[name="phone"]');
+
+        async function onSubmit(event) {
+            event.preventDefault();
+            const data = new FormData(form);
+
+            // const person = personInput.value.trim();
+            // const phone = phoneInput.value.trim();
+            const person = data.get('person').trim();
+            const phone = data.get('phone').trim();
+
+            const record = { person, phone };
+
+            // console.log(person, phone);
+            const result = await postData(record);
+            personInput.value = '';
+            phoneInput.value = '';
+            alert('Record created');
+        }
+
+        async function getData() {
+            const url = 'http://localhost:3030/jsonstore/phonebook';
+
+            const res = await fetch(url);
+            const data = await res.json();
+
+            return data;
+        }
+
+        async function postData(data) {
+            const url = 'http://localhost:3030/jsonstore/phonebook';
+
+            const options = {
+                method: 'post',
+                headers: { 'Content-type': 'application/json' },
+                body: JSON.stringify(data)
+            }
+
+            try {
+                const res = await fetch(url, options);
+                if (res.ok != true) {
+                    throw new Error(res.statusText);
+                }
+
+                const result = await res.json();
+                return result;
+            } catch (error) {
+
+            }         
+        }
+    </script>
+</body>
+
+  
+</html>

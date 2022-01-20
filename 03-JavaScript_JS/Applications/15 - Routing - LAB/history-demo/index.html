@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Demo</title>
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <h1>History Demo</h1>
+
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/catalog">Catalog</a>
+        <a href="/catalog/kitchens">Kitchen Equipments</a>
+        <a href="/about">About</a>
+    </nav>
+
+    <main>      
+    </main>
+
+</body>
+
+<script>
+    //Като се връщаме напред/назад в history-то, визуализирай съответната информация на страницата
+    window.addEventListener('popstate', showContent); //trigger the show content on the page after we have pushState (or replaceState) in history
+    
+    const views = {
+        '/home': () => '<h2>Home page </h2><p>Welcome to our site</p>',
+        '/catalog': () => '<h2>Catalog</h2><p>List of items</p>',
+        '/catalog/kitchens': () => '<h2>Kitchen Equipments</h2><p>List of items</p>',
+        '/about': () => '<h2>About us</h2><p>Contact: +15184388 215</p>'
+    };
+
+    const main = document.querySelector('main');
+    document.body.addEventListener('click', ev => {
+        //Когато потребителят цъка на линкове
+        if (ev.target.tagName == 'A') {
+            ev.preventDefault(); //недей презареждай страницата
+            history.pushState({}, '', ev.target.href); //вземи href-а(който в случая е pathname) от html от дадения линк и го сложи в URL-a, както и в history-то
+            showContent();//покажи текущото инфо от страницата
+        }
+    });
+
+    //When we start the page
+    showContent();
+
+    function showContent() {
+        const path = window.location.pathname;
+
+        const view = views[path];
+
+        if (typeof view == 'function') {
+            main.innerHTML = view();
+        } else {
+            main.innerHTML = '<h2>404</h2><p>Page Not Found</p>';
+        }        
+    }
+</script>
+
+</html>

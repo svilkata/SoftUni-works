@@ -1,0 +1,25 @@
+[
+    {
+        "title": "First article",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quidem accusantium voluptatum nulla adipisci ipsa voluptates assumenda asperiores? Doloribus aspernatur quis architecto ullam quae ipsa unde molestias aliquam soluta corporis.",
+        "author": "John Smith",
+        "color": "red",
+        "comments": []
+    },
+    {
+        "title": "Second article",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quidem accusantium voluptatum nulla adipisci ipsa voluptates assumenda asperiores? Doloribus aspernatur quis architecto ullam quae ipsa unde molestias aliquam soluta corporis.",
+        "author": "Peter Johnson",
+        "color": "green",
+        "disabled": true,
+        "comments": []
+    },
+    {
+        "title": "Third article",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quidem accusantium voluptatum nulla adipisci ipsa voluptates assumenda asperiores? Doloribus aspernatur quis architecto ullam quae ipsa unde molestias aliquam soluta corporis.",
+        "author": "Marie Curie",
+        "color": "blue",
+        "comments": []
+    }
+]
+
