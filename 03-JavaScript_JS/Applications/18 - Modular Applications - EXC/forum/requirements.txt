@@ -1,0 +1,11 @@
+yes - 1. Home page
+yes - 2. Topic list
+yes - 3. Authentication - Login/Register
+yes - 4. Topic details + Comments + Post New Comments
+yes - 5. Create new Topic
+6. Edit topic
+
+
+Bonus
+* User page
+* Edit comment
