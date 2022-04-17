@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sellers>
+    <seller>
+        <first-name>Kasper</first-name>
+        <last-name>Juanes</last-name>
+        <email>kjuanes2@google.com.br</email>
+        <rating>BAD</rating>
+        <town>Prakhon Chai</town>
+    </seller>
+    <seller>
+        <first-name>Ivan</first-name>
+        <last-name>Ivanov</last-name>
+        <email>kjuanes2@google.com.br</email>
+        <rating>BAD</rating>
+        <town>Maina Town</town>
+    </seller>
+</sellers>

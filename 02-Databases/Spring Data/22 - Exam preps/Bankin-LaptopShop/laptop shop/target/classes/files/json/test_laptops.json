@@ -1,0 +1,26 @@
+[
+  {
+    "macAddress": "B5-42-0A-AC-F0-19",
+    "cpuSpeed": 1.46,
+    "ram": 128,
+    "storage": 128,
+    "description": "Aenean lectus. Pellentesque eget nunc.",
+    "price": 4081.54,
+    "warrantyType": "PREMIUM",
+    "shop": {
+      "name": "Jacobi and Bayer"
+    }
+  },
+  {
+    "macAddress": "B5-42-0A-AC-F0-19",
+    "cpuSpeed": 1.46,
+    "ram": 128,
+    "storage": 128,
+    "description": "Aenean lectus. Pellentesque eget nunc.",
+    "price": 4081.54,
+    "warrantyType": "PREMIUM",
+    "shop": {
+      "name": "Jacobi and Bayer"
+    }
+  }
+]

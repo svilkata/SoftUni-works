@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Ivan",
+    "lastName": "Petkov",
+    "email": "ivan@abv.bg",
+    "town": {
+      "name": "Pazardjik"
+    }
+  },
+  {
+    "firstName": "Svilen",
+    "lastName": "Velikov",
+    "email": "svilen@abv.bg",
+    "town": {
+      "name": "Shumen"
+    }
+  }
+]

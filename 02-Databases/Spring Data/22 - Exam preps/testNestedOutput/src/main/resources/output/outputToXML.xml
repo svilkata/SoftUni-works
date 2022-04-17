@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shops>
+    <shop>
+        <name>Bai Kirovata krychma</name>
+        <address>u nas si</address>
+        <employee-count>8</employee-count>
+        <shop-area>200</shop-area>
+        <town>
+            <name>Sofia</name>
+        </town>
+    </shop>
+    <shop>
+        <name>Emi's shop</name>
+        <address>Prava polqna 18</address>
+        <employee-count>14</employee-count>
+        <shop-area>150</shop-area>
+        <town>
+            <name>Plovdiv</name>
+        </town>
+    </shop>
+</shops>

@@ -1,0 +1,20 @@
+[
+  {
+    "firstName": "Mil",
+    "lastName": "Armitty",
+    "email": "marmit2@digg.com",
+    "registeredOn": "03/07/2020",
+    "town": {
+      "name": "Chicago"
+    }
+  },
+  {
+    "firstName": "Mil",
+    "lastName": "Armitty",
+    "email": "marmit2@digg.com",
+    "registeredOn": "03/07/2020",
+    "town": {
+      "name": "Chicago"
+    }
+  }
+]
