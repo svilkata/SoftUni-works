@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="unit-testing-mock-vs-classic" />
+        <module name="18_1 - mockist-vs-classical-unit-test" />
       </profile>
     </annotationProcessing>
   </component>
