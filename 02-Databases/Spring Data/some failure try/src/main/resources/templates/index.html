@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Users info</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href="@{css/bootstrap.css}" rel="stylesheet"/>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" th:href="@{/}">Users info</a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <legend>All Users</legend>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Email</th>
+            <th scope="col">Username</th>
+            <th scope="col">Password</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${usersDtos}">
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.password}"></td>
+            <td>
+                <form th:action="@{/users/{name}(name=${user.username})}" th:method="DELETE">
+                    <input type="submit" value="Delete Contact"/>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <form class="form-horizontal" th:method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>New User</legend>
+            <div class="form-group">
+                <label for="Email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                    <input type="text" autofocus="autofocus" name="Email" title="Email" class="form-control"
+                           id="Email"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Username" class="col-lg-2 control-label">Username</label>
+                <div class="col-lg-10">
+                    <input type="text" autofocus="autofocus" name="Username" title="Username" class="form-control"
+                           id="Username"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Password" class="col-lg-2 control-label">Password</label>
+                <div class="col-lg-10">
+                    <input type="text" autofocus="autofocus" name="Password" title="Password" class="form-control"
+                           id="Password"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <hr/>
+
+    <footer>
+        <p>&copy; Software University</p>
+    </footer>
+</div>
+
+</body>
+</html>
