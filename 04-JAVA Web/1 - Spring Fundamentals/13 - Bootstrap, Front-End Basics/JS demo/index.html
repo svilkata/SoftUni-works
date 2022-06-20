@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Първо зареждам Bootstrap CSS-а -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <!-- След това зареждаме нашия CSS, за да оverride-нем-->
+    <link rel="stylesheet" href="styles.css" />
+
+
+</head>
+
+<body>
+    <p>Hello world! This is HTML5 Boilerplate!</p>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <article class="card">
+                    <img src="..." class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <article class="card">
+                    <img src="..." class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <article class="card">
+                    <img src="..." class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+
+    <div class="alert alert-success alert-dismissable">
+        <a class="close" data-dismiss="alert" aria-label="close">×</a>
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+
+    <!-- когато нямаме defer и async – то трябва да сложим в края на <body> то. -->
+
+    <!-- Първо зареждаме JQuery и Popper, и последно Boostrap скрипта. 
+        Bootstrap скрипта ще чете от предходните 2 библиотеки -->
+    <script src="https://code.jquery.com/jquery3.3.1.slim.min.js"></script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- И чак накрая нашия скрипт - каквото ние пишем това да стане, ако има съвпадение с Bootstrap, да се изпълянва нашето -->
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
