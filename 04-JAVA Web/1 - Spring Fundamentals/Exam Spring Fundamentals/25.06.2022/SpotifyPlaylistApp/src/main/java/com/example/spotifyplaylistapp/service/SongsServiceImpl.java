@@ -69,7 +69,7 @@ public class SongsServiceImpl {
             leftViewModel.setStyle(sng.getStyle().getName().name());
             leftViewModel.setPerformer(sng.getPerformer());
             leftViewModel.setTitle(sng.getTitle());
-            leftViewModel.setDuration(sng.getDuration());
+            leftViewModel.setDuration(fromSecondsToMinutes(sng.getDuration()));
             leftViewModel.setId(sng.getId());
             allLeft.add(leftViewModel);
         });
@@ -81,7 +81,7 @@ public class SongsServiceImpl {
                 PlaylistSongsUserRightModel rightModel = new PlaylistSongsUserRightModel();
                 rightModel.setTitle(sng.getTitle());
                 rightModel.setPerformer(sng.getPerformer());
-                rightModel.setDuration(sng.getDuration());
+                rightModel.setDuration(fromSecondsToMinutes(sng.getDuration()));
                 rightModel.setUserId(sng.getOwner().getId());
                 allRight.add(rightModel);
             }
@@ -120,11 +120,20 @@ public class SongsServiceImpl {
                     sumSecond[0] += s.getDuration();
                 });
 
-        return sumSecond[0].toString();
+        return fromSecondsToMinutes(sumSecond[0]);
     }
 
     public void removeAllSongsFromUserPlaylist() {
         List<PlaylistEntitySongsUsers> allByOwner = this.playlistRepositorySongsUsers.findAllByOwner_Id(this.loggedUser.getId());
         this.playlistRepositorySongsUsers.deleteAll(allByOwner);
+    }
+
+    private String fromSecondsToMinutes(Integer seconds){
+        int minutes = seconds / 60;
+        int secs = seconds % 60;
+
+        String format = String.format("%02d:%02d", minutes, secs);
+
+        return format;
     }
 }

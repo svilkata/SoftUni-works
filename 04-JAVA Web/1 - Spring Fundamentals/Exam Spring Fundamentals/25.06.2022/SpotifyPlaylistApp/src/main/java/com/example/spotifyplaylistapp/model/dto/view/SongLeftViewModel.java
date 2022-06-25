@@ -4,7 +4,7 @@ public class SongLeftViewModel {
     private Long id;
     private String performer;
     private String title;
-    private Integer duration;
+    private String duration;
     private String style;
 
     public String getStyle() {
@@ -34,11 +34,11 @@ public class SongLeftViewModel {
         this.title = title;
     }
 
-    public Integer getDuration() {
+    public String getDuration() {
         return duration;
     }
 
-    public void setDuration(Integer duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 

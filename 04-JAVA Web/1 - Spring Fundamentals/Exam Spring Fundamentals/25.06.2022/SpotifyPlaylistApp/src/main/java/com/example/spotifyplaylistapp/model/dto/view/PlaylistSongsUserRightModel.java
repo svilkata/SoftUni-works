@@ -5,7 +5,7 @@ import com.example.spotifyplaylistapp.model.entity.UserEntity;
 public class PlaylistSongsUserRightModel {
     private String performer;
     private String title;
-    private Integer duration;
+    private String duration;
     private long userId;
 
     public PlaylistSongsUserRightModel() {
@@ -27,11 +27,11 @@ public class PlaylistSongsUserRightModel {
         this.title = title;
     }
 
-    public Integer getDuration() {
+    public String getDuration() {
         return duration;
     }
 
-    public void setDuration(Integer duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 
