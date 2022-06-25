@@ -1,0 +1,3 @@
+Последния качен .zip ще се разглежда - (src + pom.xml) или (src + build.gradle + settings.gradle)
+Да си създам предварителна структура за изпита за 25.06
+Exam prep - Bankin version is the best for now!!! - finish the fighting ships
