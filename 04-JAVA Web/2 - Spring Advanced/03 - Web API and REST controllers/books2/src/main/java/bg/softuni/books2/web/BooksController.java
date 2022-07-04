@@ -11,6 +11,7 @@ import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin("*")  //разрешавам на всички да четат моето /api/books
 @RestController
 @RequestMapping("/api/books")
 public class BooksController {
