@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+    url: jdbc:h2:mem:testdb
+  h2:
+    console:
+      enabled: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+  jpa:
+#    defer-datasource-initialization: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+
+#Cloudinary properties
+cloudinary:
+  cloud_name: "dtfd8gw16"
+  api_key: "218356847735493"
+  api_secret: ${CLOUDINARY_SECRET}
+
+
