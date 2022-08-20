@@ -1,0 +1,18 @@
+li {
+    border: yellow solid;
+
+}
+
+span {
+    border: dotted darkcyan;
+}
+
+section {
+    display: inline-block;
+}
+
+img{
+    max-width: 25%;
+    max-height: 25%;
+    
+}

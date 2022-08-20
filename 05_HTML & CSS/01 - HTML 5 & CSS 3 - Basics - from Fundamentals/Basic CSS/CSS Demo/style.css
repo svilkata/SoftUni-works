@@ -1,0 +1,55 @@
+p {
+    color: yellowgreen;
+    font-size: 24px;
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+}
+
+.quoted-text {
+font-style: italic;
+font-size: 18px;
+color: gray
+}
+
+#special-quote {
+    background-color: hotpink;
+}
+
+.slogan {
+    font-weight: bold;
+    
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: red;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 10px;
+    border: 1px solid red;
+   
+}
+
+.navigation a:hover {
+   
+    background-color: transparent;
+    color: red;
+    transform: scale(1,1);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
