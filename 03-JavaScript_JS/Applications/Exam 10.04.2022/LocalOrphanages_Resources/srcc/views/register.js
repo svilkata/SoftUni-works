@@ -31,6 +31,7 @@ export function registerPage(ctx) {
 
     //event listener-а няма опасност да бъде добавен два пъти
     async function onSubmit(event) {
+        debugger;
         event.preventDefault();
         const formData = new FormData(event.target);
 
@@ -47,7 +48,7 @@ export function registerPage(ctx) {
         }
 
         await register(email, password);
-        ctx.updateUserNav();  //тук няма нужда все още да сменяме nav бутоните
+        ctx.updateUserNav();  
         ctx.page.redirect('/');
     }
 }

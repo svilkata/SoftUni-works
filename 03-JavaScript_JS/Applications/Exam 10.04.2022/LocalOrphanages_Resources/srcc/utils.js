@@ -1,5 +1,3 @@
-import { getPostById } from './api/data.js';
-
 export function getUserData() {
     return JSON.parse(sessionStorage.getItem('userData')); 
 }
@@ -14,10 +12,4 @@ export function clearUserData() {
     sessionStorage.removeItem('userData');
 }
 
-export function loadAPost(ctx, next) {
-    debugger;
-    const postPromise = await getPostById(ctx.params.id); //не сме го await-нали нарочно
-    ctx.postPromise = postPromise; //добавяме свойство един пост
-    next();
-}
 

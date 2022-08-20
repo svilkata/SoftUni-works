@@ -38,6 +38,6 @@ export function loginPage(ctx) {
 
         await login(email, password);
         ctx.updateUserNav();
-        ctx.page.redirect('/home'); //самият контекст носи в себе си page.js библиотеката, от която можем да редиректнем.
+        ctx.page.redirect('/'); //самият контекст носи в себе си page.js библиотеката, от която можем да редиректнем.
     }
 }

@@ -1,13 +1,15 @@
-import { html, until } from '../lib.js';
+import { html } from '../lib.js';
 import { getAllPosts } from '../api/data.js';
 
 //Първо си правим един темплейт статичен, и след това изкарваме от него втори темплейт за всеки филм. При което става динамичен templating.
-const dashboardFullTemplate = (postsPromise) => html`
+const dashboardFullTemplate = (dashPosts) => html`
 <section id="dashboard-page">
     <h1 class="title">All Posts</h1>
 
     <div class="all-posts">
-        ${until(postsPromise, html`<p>Loading&hellip; </p>`)}
+        ${dashPosts.length == 0 
+            ? html`<h1 class="title no-posts-title">No posts yet!</h1>`
+            : dashPosts.map(dashCard)}
     </div>    
 </section>`;
 
@@ -21,17 +23,10 @@ const dashCard = (aPost) => html`
 </div>`;
 
 
-export function dashboardPage(ctx) {   
-    ctx.renderProp(dashboardFullTemplate(loadPosts()));
-}
-
-async function loadPosts() {
-    const dashPosts = await getAllPosts(); //масив от постове, resolve-нат!!!
-    if (dashPosts.length == 0) {
-        return html`<h1 class="title no-posts-title">No posts yet!</h1>`;
-    } else {
-        return dashPosts.map(dashCard); //масив от рендирани темплейти за всеки пост 
-    }    
+export async function dashboardPage(ctx) {
+    const dashPosts = await getAllPosts(); //масив от постове, resolve-нат!!!  
+    
+    ctx.renderProp(dashboardFullTemplate(dashPosts));
 }
 
 
