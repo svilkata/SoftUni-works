@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reactive.ReactiveTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-16T19:04:24" hostname="DESKTOP-SVILEN" time="0.179">
+  <properties/>
+  <testcase name="testTransformation()" classname="reactive.ReactiveTests" time="0.179"/>
+  <system-out><![CDATA[Transformation is complete, closing down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
