@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components Demo</title>
+    <!-- style not valid for Shadow elements -->
+    <style>
+        p {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <template id="my-template">
+        <article>
+            <h2>
+                <slot name="title">Title</slot>
+            </h2>
+            <button>Show more</button>
+            <div style="display: none;">
+                <p>
+                    <slot>Article content</slot>
+                </p>
+            </div>
+        </article>
+    </template>
+
+
+    <h1>Components Demo</h1>
+    <p>Standard paragraph</p>
+    <button id="btn">Click here</button>
+    <my-element info="false">
+        Hi <span> Again</span>
+        <span slot="title">Title from content</span>
+    </my-element>
+
+    <main></main>
+
+    <script type="module">
+        const main = document.querySelector('main');
+        const tmp = document.getElementById('my-template');
+
+        document.getElementById('btn').addEventListener('click', () => {
+            const element = document.createElement('my-element');
+            main.appendChild(element);
+        });
+
+        class MyComponent extends HTMLElement {
+            constructor() {
+                super();
+                this.attachShadow({ mode: 'open' });
+            }
+
+            connectedCallback() {
+                this.shadowRoot.appendChild(tmp.content.cloneNode(true));
+
+                //Хваща първия бутон Show more
+                this.shadowRoot.querySelector('button').addEventListener('click', () => {
+                    // this.info = !this.info;   така не го отчита
+
+                    //We change from inside the app functionality - i.e. toggling the button
+                    if (this.getAttribute('info') == 'false') {
+                        this.setAttribute('info', true);
+                    } else {
+                        this.setAttribute('info', false);
+                    }
+                });
+            }
+
+            disconnectedCallback() {
+            }
+
+
+            static get observedAttributes() {
+                return ['info'];
+            }
+
+            attributeChangedCallback(name, oldValue, newValue) {
+                console.log(`${name}'s value has been changed from ${oldValue} to ${newValue}`);
+
+                //Това може да се извика отвънка програмистично (без да кликаме на бутона реално) - един вид ако променим отвън атрибута info
+                // Затова следната функционалност я пишем тук, а не в connectedCallback() функцията:
+                const div = this.shadowRoot.querySelector('div');
+                if (div) {
+                    div.style.display = newValue == 'true' ? 'block' : 'none';
+                }
+            }
+
+            // Възможност за изпълнение отвън - методите са достъпни на инстанцията на Dom div елемента под бутона Show more
+            show() {
+                this.setAttribute('info', 'true');
+            }
+
+            hide() {
+                this.setAttribute('info', 'false');
+            }
+        }
+
+        window.customElements.define('my-element', MyComponent);
+    </script>
+
+</body>
+
+</html>
