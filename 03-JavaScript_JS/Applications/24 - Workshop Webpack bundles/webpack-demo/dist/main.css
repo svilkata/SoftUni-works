@@ -1,0 +1,13 @@
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/MessageComponent/MessageComponent.css ***!
+  \********************************************************************************************************/
+.message-component-container li {
+    list-style: none;
+    color: red;
+}
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/SkillCard/SkillCard.css ***!
+  \******************************************************************************************/
+li {
+    font-style: italic;
+}
