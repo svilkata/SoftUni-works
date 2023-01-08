@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+
+	<title>HTML Tags &amp; Semantic Markup</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="reveal/css/reveal.min.css">
+	<link rel="stylesheet" href="reveal/css/theme/SoftUni.css" id="theme">
+	<link rel="stylesheet" href="css/solarized_light.css"><!-- For syntax highlighting -->
+
+	<script>document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script><!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<!--[if lt IE 9]><script src="../reveal/lib/js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides"><!-- Any section element inside of this container is displayed as a slide -->
+			
+			<section>
+	<p>Front End Development Part 1</p>
+	<p><img alt="Site Logo" src="reveal/media/logo.png" width="120"></p>
+	<h1 class="center">HTML Tags &amp; Semantic Markup</h1>
+</section>
+
+<section>
+	<section>
+		<h1 class="center">The Web <br> Common&nbsp;Terms</h1>
+	</section>
+
+	<section>
+		<h2>Web Browser</h2>
+		<p>A web browser (commonly referred to as a browser) is a software application for accessing information on the World Wide Web. Each individual web page, image, and video is identified by a distinct URL, enabling browsers to retrieve and display them on the user's device.</p>
+	</section>
+
+	<section>
+		<h2>Web Server</h2>
+		<p>Refers to server software, or hardware dedicated to running said software, that can serve contents to the World Wide Web. A web server processes incoming network requests over HTTP and several other related protocols</p>
+	</section>
+
+	<section>
+		<p class="center" style="width: 60vw; margin: 0 !important;"><img src="images/server-laptop.jpg" style="display: block; max-width: 100%; height: auto; max-height: inherit;" alt="" /></p>
+	</section>
+
+	<section>
+		<h2>Search engine</h2>
+		<p>Software system that is designed to search for information on the World Wide Web. The search results are generally presented in a line of results, often referred to as search engine results pages (SERPs). The information may be a mix of web pages, images, videos, infographics, articles, research papers and other types of files.</p>
+	</section>
+
+	<section>
+		<h2>Domain name</h2>
+		<p>Identification string that defines a realm of administrative autonomy, authority or control within the Internet.
+		<p><strong>In 2017, 330.6 million domain names had been registered.</strong></p>
+	</section>
+
+	<section>
+		<h2>Domain name</h2>
+		<h3>188.166.156.104 / dankov.me</h3>
+	</section>
+	
+	<section>
+		<h2>Domain Name System (DNS)</h2>
+		<p>Hierarchical decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities.</p>
+		<p>Most prominently, it translates more readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. By providing a worldwide, distributed directory service, the Domain Name System has been an essential component of the functionality of the Internet since 1985.</p>
+	</section>
+
+	<section>
+		<h2>Domain Name Server / Name server</h2>
+		<p>A name server is a computer application that implements a network service for providing responses to queries against a directory service. It translates an often humanly meaningful, text-based identifier to a system-internal, often numeric identification or addressing component. This service is performed by the server in response to a service protocol request.</p>
+		<p>An example of a name server is the server component of the Domain Name System (DNS), one of the two principal namespaces of the Internet. The most important function of DNS servers is the translation (resolution) of human-memorable domain names and hostnames into the corresponding numeric Internet Protocol (IP) addresses, the second principal name space of the Internet which is used to identify and locate computer systems and resources on the Internet.</p>
+	</section>
+
+	<section>
+		<p class="center" style="margin: 0 !important;"><img src="images/client-server-architecture.png" style="display: block; max-width: 100%; height: auto; max-height: inherit;" alt="" /></p>
+	</section>
+
+	<section>
+		<p class="center" style="margin: 0 !important;"><img src="images/http-request.png" style="display: block; max-width: 100%; height: auto; max-height: inherit;" alt="" /></p>
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h1 class="center">Semantic HTML</h1>
+	</section>
+
+	<section>
+		<h2>What is Semantic HTML?</h2>
+		<p>Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation. For example, a <p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational, because people know what paragraphs are and browsers know how to display them.</p>
+	</section>
+
+	<section>
+		<h2>Why You Should Care About Semantics</h2>
+		<p>The benefit of writing semantic HTML stems from what should be the driving goal of any web page — <strong>the desire to communicate</strong></p>
+		<p>By adding semantic tags to your document, you provide additional information about that document, which aids in communication.</p>
+		<p>Specifically, semantic tags make it clear to the browser what the meaning of a page and its content is. That clarity is also communicated with search engines, ensuring that the right pages are delivered for the right queries.</p>
+	</section>
+
+	<section>
+		<h2>Use Semantic Tags Correctly</h2>
+		<p>When you want to use semantic tags to convey meaning rather than for presentation purposes, you need to be careful that you don't use them incorrectly simply for their common display properties.</p>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h1 class="center">Tags</h1>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - header</h2>
+		<p><code>&lt;header&gt;</code></p>
+		<p>Represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, a search form, an author name, and so on.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - nav</h2>
+		<p><code>&lt;nav&gt;</code></p>
+		<p>Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - main</h2>
+		<p><code>&lt;main&gt;</code></p>
+		<p>Represents the dominant content of the 'body' of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - aside</h2>
+		<p><code>&lt;aside&gt;</code></p>
+		<p>Represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - footer</h2>
+		<p><code>&lt;footer&gt;</code></p>
+		<p>Represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - article</h2>
+		<p><code>&lt;article&gt;</code></p>
+		<p>Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - figcaption</h2>
+		<p><code>&lt;figcaption&gt;</code></p>
+		<p>Represents a caption or legend for the rest of the contents its parent 'figure' element, if any.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - figure</h2>
+		<p><code>&lt;figure&gt;</code></p>
+		<p>Represents self-contained content, frequently with a caption 'figcaption', and is typically referenced as a single unit.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - mark</h2>
+		<p><code>&lt;mark&gt;</code></p>
+		<p>Represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - section</h2>
+		<p><code>&lt;section&gt;</code></p>
+		<p>Represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document. Typically, but not always, sections have a heading.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - time</h2>
+		<p><code>&lt;time&gt;</code></p>
+		<p>Represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - details</h2>
+		<p><code>&lt;details&gt;</code></p>
+		<p>Creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label can be provided using the 'summary' element.</p>
+	</section>
+
+	<section>
+		<h2>Semantic Tags - summary</h2>
+		<p><code>&lt;summary&gt;</code></p>
+		<p>specifies a summary, caption, or legend for a 'details' element's disclosure box. Clicking the 'summary' element toggles the state of the parent 'details' element open and closed.</p>
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h1 class="center">More Metadata</h1>
+	</section>
+
+	<section>
+		<h2>Microdata</h2>
+		<p>WHATWG HTML specification used to nest metadata within existing content on web pages.</p>
+		<p>Search engines, web crawlers, and browsers can extract and process Microdata from a web page and use it to provide a richer browsing experience for users.</p>
+		<p>Search engines benefit greatly from direct access to this structured data because it allows them to understand the information on web pages and provide more relevant results to users.</p>
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+			## Microdata - Example
+			<br>
+			```html
+			<section>
+
+				Hello, my name is Konstantin Dankov,
+				I am a trainer at SoftUni.
+				My friends call me Johnny. 
+				You can visit my homepage at <a href="https://dankov.me">https://dankov.me</a>.
+				I live at 123123, Kamelia str, Sofia.
+
+			</section>
+			```
+		</script>
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+			## Microdata - Example
+			<br>
+			```html
+			<section itemscope itemtype="http://schema.org/Person"> 
+
+				Hello, my name is <span itemprop="name">Konstantin Dankov</span>
+
+				I am a <span itemprop="jobTitle">trainer</span> at <span itemprop="affiliation">SoftUni</span>. 
+
+				My friends call me <span itemprop="additionalName">Koko</span>. 
+
+				You can visit my homepage at <a href="https://dankov.me" itemprop="url">https://dankov.me</a>. 
+
+				<section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					I live at 
+					<span itemprop="streetAddress">123123</span>,
+					<span itemprop="addressLocality">Kamelia str</span>,
+					<span itemprop="addressRegion">Sofia</span>.
+				</section>
+
+			</section>
+			```
+		</script>
+	</section>
+
+	<section>
+		<h2>Schema.org</h2>
+		<p>Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond.</p>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h1 class="center">Resources</h1>
+	</section>
+	<section>
+		<h2>Resources - Glossary</h2>
+		<ul>
+			<li><a href="#">https://developer.mozilla.org/en-US/docs/Glossary/Semantics</a></li>
+			<li><a href="#">https://html.com/semantic-markup/</a></li>
+			<li><a href="#">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a></li>
+		</ul>
+	</section>
+	<section>
+		<h2>Resources - Metadata</h2>
+		<ul>
+			<li><a href="#">https://en.wikipedia.org/wiki/Microdata_(HTML)</a></li>
+			<li><a href="#">https://schema.org/docs/gs.html</a></li>
+		</ul>
+	</section>
+</section>
+
+
+		</div>
+	</div>
+	<script src="reveal/lib/js/head.min.js"></script>
+	<script src="reveal/js/reveal.min.js"></script>
+	<script>
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+
+		// The "normal" size of the presentation, aspect ratio will be preserved
+		// when the presentation is scaled to fit different resolutions. Can be
+		// specified using percentage units.
+		width: 1600,
+		height: 850,
+
+		// Factor of the display size that should remain empty around the content
+		margin: 0.1,
+
+		// Bounds for smallest/largest possible scale to apply to content
+		minScale: 0.2,
+		maxScale: 1.0,
+		controls: false,
+		progress: false,
+		history: true,
+		keyboard: true,
+		overview: true,
+		center: false,
+		loop: false,
+		autoSlide: 0,
+		mouseWheel: false,
+		rollingLinks: false,
+		transitionSpeed: 'fast', // default/fast/slow
+		transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+		dependencies: [
+			{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+	</script>
+</body>
+</html>
+
