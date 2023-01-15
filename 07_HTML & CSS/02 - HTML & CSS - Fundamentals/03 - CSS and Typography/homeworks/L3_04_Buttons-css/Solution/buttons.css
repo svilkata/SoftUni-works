@@ -1,0 +1,44 @@
+@import url("./fontawesome-free-6.2.1-web/css/all.css");
+
+.button {
+    /* display: inline-block;
+    margin-right: 0.5em; */
+    outline: none;
+    /* border: 2px solid #000; */
+    background: transparent;
+    text-decoration: none; /* няма подчертавка на текста */
+    color: inherit; /* цвета е дефаултно нормален на html root елемента */
+    border-radius: 2em;
+    padding: 1em 1.5em;
+    font-weight: bold;
+    /* text-transform: capitalize lowercase uppercase; */
+    cursor: pointer; /* винаги има ръчичка курсора като посочим елементите с клас button*/
+}
+
+.hover {
+    color: rgb(51, 51, 51);
+}
+
+.button.hover:hover {
+    border-color: rgb(0, 102, 0);
+    color: rgb(0, 102, 0);
+}
+
+.button.fill {
+    /* ако използваме само background, то автоматично се пре-дефинират всички пропъртита, които съдържа background. Добра практика е да използваме конкретно само кое нещо сменяме от background - в случая променяме само background-color */
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.button.fill.hover {
+    color: rgb(251, 251, 251);
+}
+
+.button.fill.hover:hover {
+    background-color: rgb(0, 102, 0);
+    color: rgb(251, 251, 251);
+}
+
+.button.icon i {
+    padding-right: 0.5em;
+}
