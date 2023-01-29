@@ -1,0 +1,11 @@
+body {
+    font: 14px/1.5 Helvetica, san-serif;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+
+img {
+    max-width: 50%;
+}
+
+
