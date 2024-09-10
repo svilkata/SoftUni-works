@@ -1,0 +1,15 @@
+softuni:
+  webflux:
+    client:
+      schema: http
+      host: localhost
+      port: 9001
+
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://localhost:27017/mydb
+      database: mydb
+      host: localhost
+      port: 27017
+
