@@ -60,4 +60,15 @@ public class ExchangeRate {
         this.rate = rate;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "ExchangeRate{" +
+                "id='" + id + '\'' +
+                ", fromCurrency='" + fromCurrency + '\'' +
+                ", toCurrency='" + toCurrency + '\'' +
+                ", time=" + time +
+                ", rate=" + rate +
+                '}';
+    }
 }

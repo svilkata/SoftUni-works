@@ -1,5 +1,6 @@
 package bg.softuni.webfluxservice.web;
 
+import bg.softuni.webfluxservice.service.ExchangeRateHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
