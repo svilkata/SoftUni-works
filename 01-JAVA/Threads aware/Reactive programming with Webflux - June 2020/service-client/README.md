@@ -10,7 +10,7 @@
 #### webflux-client app
 2. Then initialize the MongoDB via the `./local/docker-compose.yaml` file in Docker
 3. Run the webflux-client app locally on port 8080 - the ExchangeRateInit will call the reactive web client which will call our webfluxservice app on port 9001 - some records will be saved in the db
-4. The webflux-client app is made both with rest controller approach and with router approach
+4. The webflux-client app is made both with rest controller approach and with router+handler approach
 4. You can run Postman and execute:
 *    GET on localhost:8080/ratescontroller
 *    GET on localhost:8080/ratesrouter
@@ -44,3 +44,6 @@
 --------------
 *    DELETE localhost:8080/ratescontroller/11
 *    DELETE localhost:8080/ratesrouter/11
+
+
+You can also see the MongoDB database data via Studio 3T or via IntelliJ db plugin.
